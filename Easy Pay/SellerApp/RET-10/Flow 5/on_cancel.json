@@ -9,14 +9,14 @@
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
     "bpp_id": "sellerpreprod.easypay.co.in",
     "bpp_uri": "https://sellerpreprod.easypay.co.in/ecommerce/ondc/seller",
-    "transaction_id": "b0ef1f8f-5513-403c-a654-fc29fd75cbd8",
-    "message_id": "4d9972a7-824f-46cc-852b-a77dc2f0fd3f",
-    "timestamp": "2024-04-26T09:22:29.414Z",
+    "transaction_id": "837c26ea-930e-4948-99ff-23b63fc218a1",
+    "message_id": "101-1844-6797627669",
+    "timestamp": "2024-06-04T12:38:05.145Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "2024-04-26-247248",
+      "id": "2024-06-04-485008",
       "state": "Cancelled",
       "provider": {
         "id": "101",
@@ -28,31 +28,31 @@
       },
       "items": [
         {
-          "id": "165",
+          "id": "158",
           "quantity": {
             "count": 0
           },
           "fulfillment_id": "1"
         },
         {
-          "id": "156",
+          "id": "159",
           "quantity": {
             "count": 0
           },
           "fulfillment_id": "1"
         },
         {
-          "id": "165",
-          "fulfillment_id": "1269-RTO",
+          "id": "158",
+          "fulfillment_id": "1844-RTO",
           "quantity": {
-            "count": 1
+            "count": 2
           }
         },
         {
-          "id": "156",
-          "fulfillment_id": "1269-RTO",
+          "id": "159",
+          "fulfillment_id": "1844-RTO",
           "quantity": {
-            "count": 1
+            "count": 2
           }
         }
       ],
@@ -69,8 +69,8 @@
         },
         "email": "jay.upadhyay@easypay.in",
         "phone": "8849150463",
-        "created_at": "2024-04-26T09:09:30.930Z",
-        "updated_at": "2024-04-26T09:09:30.930Z"
+        "created_at": "2024-06-04T12:30:41.069Z",
+        "updated_at": "2024-06-04T12:30:41.069Z"
       },
       "fulfillments": [
         {
@@ -94,9 +94,10 @@
             },
             "time": {
               "range": {
-                "start": "2024-04-26T09:10:03.409Z",
-                "end": "2024-04-26T09:10:03.409Z"
-              }
+                "start": "2024-06-04T12:31:00.691Z",
+                "end": "2024-06-04T13:16:00.691Z"
+              },
+              "timestamp": "2024-06-04T12:35:17.000Z"
             },
             "contact": {
               "phone": "8734097448",
@@ -125,13 +126,13 @@
             },
             "time": {
               "range": {
-                "start": "2024-04-26T09:22:31.658Z",
-                "end": "2024-04-26T09:22:31.658Z"
+                "start": "2024-06-04T13:16:00.691Z",
+                "end": "2024-06-05T13:16:00.691Z"
               }
             }
           },
           "@ondc/org/provider_name": "Anand Super Mart",
-          "@ondc/org/TAT": "P2D",
+          "@ondc/org/TAT": "P1D",
           "state": {
             "descriptor": {
               "code": "Cancelled"
@@ -151,11 +152,11 @@
                 },
                 {
                   "code": "retry_count",
-                  "value": "1"
+                  "value": "3"
                 },
                 {
                   "code": "rto_id",
-                  "value": "1269-RTO"
+                  "value": "1844-RTO"
                 }
               ]
             },
@@ -164,27 +165,51 @@
               "list": [
                 {
                   "code": "fulfillment_state",
-                  "value": "Cancelled"
+                  "value": "Out-for-delivery"
                 },
                 {
                   "code": "updated_at",
-                  "value": "2024-04-26T09:19:52Z"
+                  "value": "2024-06-04T12:35:27.000Z"
                 }
               ]
             }
           ]
         },
         {
-          "id": "1269-RTO",
+          "id": "1844-RTO",
           "type": "RTO",
           "state": {
             "descriptor": {
-              "code": "RTO-Delivered"
+              "code": "RTO-Initiated"
             }
           },
           "start": {
             "time": {
-              "timestamp": "2024-04-26T09:22:31.658Z"
+              "timestamp": "2024-06-04T12:38:05.000Z"
+            },
+            "location": {
+              "gps": "18.562160,73.914608",
+              "address": {
+                "name": "Jay Upadhyay",
+                "building": "Solitaire Business Hub, opp. Neco Garden Society, Viman Nagar, Pune",
+                "locality": "Pujnay Lalshaji Vithoba Jawre Patil Marg",
+                "city": "Pune",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "411014"
+              }
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "18.552721,73.889648",
+              "address": {
+                "street": "G-41",
+                "locality": "Shashtri Nagar",
+                "city": "Pune City",
+                "area_code": "411006",
+                "state": "MAHARASHTRA"
+              }
             }
           },
           "tags": [
@@ -193,11 +218,11 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "delivery"
+                  "value": "item"
                 },
                 {
                   "code": "id",
-                  "value": "1269-RTO"
+                  "value": "158"
                 },
                 {
                   "code": "currency",
@@ -205,7 +230,7 @@
                 },
                 {
                   "code": "value",
-                  "value": "50.0"
+                  "value": "-5248.5"
                 }
               ]
             },
@@ -218,7 +243,7 @@
                 },
                 {
                   "code": "id",
-                  "value": "165"
+                  "value": "159"
                 },
                 {
                   "code": "currency",
@@ -226,70 +251,7 @@
                 },
                 {
                   "code": "value",
-                  "value": "-264.0"
-                }
-              ]
-            },
-            {
-              "code": "quote_trail",
-              "list": [
-                {
-                  "code": "type",
-                  "value": "item"
-                },
-                {
-                  "code": "id",
-                  "value": "165"
-                },
-                {
-                  "code": "currency",
-                  "value": "INR"
-                },
-                {
-                  "code": "value",
-                  "value": "-36.0"
-                }
-              ]
-            },
-            {
-              "code": "quote_trail",
-              "list": [
-                {
-                  "code": "type",
-                  "value": "item"
-                },
-                {
-                  "code": "id",
-                  "value": "156"
-                },
-                {
-                  "code": "currency",
-                  "value": "INR"
-                },
-                {
-                  "code": "value",
-                  "value": "-578.16"
-                }
-              ]
-            },
-            {
-              "code": "quote_trail",
-              "list": [
-                {
-                  "code": "type",
-                  "value": "item"
-                },
-                {
-                  "code": "id",
-                  "value": "156"
-                },
-                {
-                  "code": "currency",
-                  "value": "INR"
-                },
-                {
-                  "code": "value",
-                  "value": "-78.84"
+                  "value": "-1680.0"
                 }
               ]
             }
@@ -299,48 +261,39 @@
       "quote": {
         "breakup": [
           {
-            "@ondc/org/item_id": "156",
+            "@ondc/org/item_id": "159",
             "@ondc/org/item_quantity": {
               "count": 0
             },
-            "title": "Kalimpong Filter Coffee - 210 gram",
+            "title": "Sprouted Wood Cold Pressed Almond Oil",
             "@ondc/org/title_type": "item",
             "item": {
               "price": {
-                "value": "657.0",
+                "value": "840.0",
                 "currency": "INR"
               }
             },
             "price": {
               "currency": "INR",
-              "value": "0.0"
+              "value": "0.00"
             }
           },
           {
-            "@ondc/org/item_id": "156",
-            "title": "Discount",
-            "@ondc/org/title_type": "discount",
-            "price": {
-              "currency": "INR",
-              "value": "0.0"
-            }
-          },
-          {
-            "@ondc/org/item_id": "165",
+            "@ondc/org/item_id": "158",
             "@ondc/org/item_quantity": {
               "count": 0
             },
-            "title": "Arham Garam Masala",
+            "title": "Blue Himalayas A2 Gir Cow bilona ghee| Cultured method 1000ml",
             "@ondc/org/title_type": "item",
             "item": {
               "price": {
-                "value": "300.0",
+                "value": "2624.25",
                 "currency": "INR"
               }
             },
             "price": {
               "currency": "INR",
-              "value": "0.0"
+              "value": "0.00"
             }
           },
           {
@@ -349,7 +302,7 @@
             "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
-              "value": "1.0"
+              "value": "0.0"
             }
           },
           {
@@ -358,31 +311,13 @@
             "@ondc/org/title_type": "misc",
             "price": {
               "currency": "INR",
-              "value": "24.6"
-            }
-          },
-          {
-            "@ondc/org/item_id": "1269-RTO",
-            "title": "Delivery charges",
-            "@ondc/org/title_type": "delivery",
-            "price": {
-              "currency": "INR",
-              "value": "50.00"
-            }
-          },
-          {
-            "@ondc/org/item_id": "1269-RTO",
-            "title": "Tax",
-            "@ondc/org/title_type": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "9.00"
+              "value": "207.86"
             }
           }
         ],
         "price": {
           "currency": "INR",
-          "value": "844.63"
+          "value": "207.86"
         },
         "ttl": "PT60S"
       },
@@ -390,18 +325,15 @@
         "uri": "https://razorpay.com/",
         "tl_method": "http/get",
         "params": {
-          "amount": "844.63",
+          "amount": "7136.36",
           "currency": "INR",
-          "transaction_id": "order_O3CEYpLoiRHExp"
+          "transaction_id": "order_OIgUb4eQkN86ej"
         },
         "status": "PAID",
         "type": "ON-ORDER",
         "collected_by": "BAP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-        "@ondc/org/settlement_basis": "delivery",
-        "@ondc/org/settlement_window": "P1D",
-        "@ondc/org/withholding_amount": "10.00",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
@@ -416,8 +348,8 @@
           }
         ]
       },
-      "created_at": "2024-04-26T09:09:59.815Z",
-      "updated_at": "2024-04-26T09:22:29.414Z"
+      "created_at": "2024-06-04T12:31:00.691Z",
+      "updated_at": "2024-06-04T12:38:05.145Z"
     }
   }
 }

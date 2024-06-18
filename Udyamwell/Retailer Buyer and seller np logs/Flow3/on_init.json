@@ -8,9 +8,9 @@
         "bap_id": "buyer-app-preprod-v2.ondc.org",
         "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
         "bpp_uri": "https://seller.udyamwell.in/",
-        "transaction_id": "ab3b9853-222e-419a-bde8-6691ea2d40b3",
-        "message_id": "ddc2611b-775c-402c-901e-ad90083a3af7",
-        "timestamp": "2024-04-20T06:28:03.239Z",
+        "transaction_id": "2c1b49f3-0c0d-41ad-b0b5-cfc5a95436d2",
+        "message_id": "91b811b8-d845-4914-86be-1f44929ec32f",
+        "timestamp": "2024-06-15T07:38:19.350Z",
         "bpp_id": "seller.udyamwell.in",
         "ttl": "PT30S"
     },
@@ -26,86 +26,75 @@
             },
             "items": [
                 {
-                    "id": "65e77755f2128f69ed9dc5fe",
+                    "id": "66464eb56b5922ef1a1df3e4",
                     "quantity": {
                         "count": 1
                     },
                     "location_id": "L1",
-                    "fulfillment_id": "mp2_sdd_f1"
+                    "fulfillment_id": "0db91e95-2c30-4f8d-840b-e152ab9381bc"
                 }
             ],
             "billing": {
                 "address": {
-                    "building": "abcd",
-                    "city": "Mohali",
-                    "state": "Punjab",
+                    "building": "Royal place",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
                     "country": "IND",
-                    "area_code": "160059",
-                    "locality": "Street 1",
-                    "name": "Akash Dhiman"
+                    "area_code": "560076",
+                    "locality": "1st Cross Road",
+                    "name": "test"
                 },
                 "phone": "7018713034",
-                "name": "Akash Dhiman",
-                "email": "dhimana865@gmail.com",
-                "created_at": "2024-04-20T06:28:00.961Z",
-                "updated_at": "2024-04-20T06:28:00.961Z"
+                "name": "test",
+                "email": "test@yopmail.com",
+                "created_at": "2024-06-15T07:38:16.350Z",
+                "updated_at": "2024-06-15T07:38:16.350Z"
             },
             "fulfillments": [
                 {
-                    "id": "mp2_sdd_f1",
+                    "id": "0db91e95-2c30-4f8d-840b-e152ab9381bc",
                     "type": "Delivery",
                     "end": {
                         "contact": {
-                            "email": "dhimana865@gmail.com",
+                            "email": "test@yopmail.com",
                             "phone": "7018713034"
                         },
                         "location": {
-                            "gps": "30.709086783174005,76.71846136450769",
+                            "gps": "12.899232,77.602168",
                             "address": {
-                                "building": "abcd",
-                                "city": "Mohali",
-                                "state": "Punjab",
+                                "building": "Royal place",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
                                 "country": "IND",
-                                "area_code": "160059",
-                                "locality": "Street 1",
-                                "name": "Akash Dhiman"
+                                "area_code": "560076",
+                                "locality": "1st Cross Road",
+                                "name": "test"
                             }
                         }
                     },
-                    "tracking": true,
-                    "tags": [
-                        {
-                            "code": "rto_action",
-                            "list": [
-                                {
-                                    "code": "return_to_origin",
-                                    "value": "yes"
-                                }
-                            ]
-                        }
-                    ]
+                    "tracking": true
                 }
             ],
             "quote": {
                 "price": {
-                    "value": "62",
+                    "value": "2522",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "65e77755f2128f69ed9dc5fe",
+                        "@ondc/org/item_id": "66464eb56b5922ef1a1df3e4",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
-                        "title": "Coka Cola",
+                        "title": "A2 Gir Cow Ghee",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "40"
+                            "value": "2380"
                         },
                         "item": {
                             "price": {
-                                "value": "40",
+                                "value": "2380.00",
                                 "currency": "INR"
                             }
                         }
@@ -113,14 +102,14 @@
                     {
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
-                        "@ondc/org/item_id": "mp2_sdd_f1",
+                        "@ondc/org/item_id": "0db91e95-2c30-4f8d-840b-e152ab9381bc",
                         "price": {
                             "currency": "INR",
-                            "value": "2"
+                            "value": "122"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "mp2_sdd_f1",
+                        "@ondc/org/item_id": "0db91e95-2c30-4f8d-840b-e152ab9381bc",
                         "title": "Packing charges",
                         "@ondc/org/title_type": "packing",
                         "price": {
@@ -132,30 +121,8 @@
                 "ttl": "P1D"
             },
             "payment": {
-                "type": "ON-FULFILLMENT",
-                "collected_by": "BPP",
-                "uri": "https://snp.com/pg",
-                "status": "NOT-PAID",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-                "@ondc/org/settlement_basis": "delivery",
-                "@ondc/org/settlement_window": "P1D",
-                "@ondc/org/withholding_amount": "4.00",
-                "tags": [
-                    {
-                        "code": "bpp_collect",
-                        "list": [
-                            {
-                                "code": "success",
-                                "value": "Y"
-                            },
-                            {
-                                "code": "error",
-                                "value": ".."
-                            }
-                        ]
-                    }
-                ],
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
@@ -170,34 +137,13 @@
                     }
                 ]
             },
-            "cancellation_terms": [],
             "tags": [
                 {
                     "code": "bpp_terms",
                     "list": [
                         {
-                            "code": "max_liability",
-                            "value": "2"
-                        },
-                        {
-                            "code": "max_liability_cap",
-                            "value": "10000"
-                        },
-                        {
-                            "code": "mandatory_arbitration",
-                            "value": "false"
-                        },
-                        {
-                            "code": "court_jurisdiction",
-                            "value": "Bengaluru"
-                        },
-                        {
-                            "code": "delay_interest",
-                            "value": "1000"
-                        },
-                        {
-                            "code": "static_terms",
-                            "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+                            "code": "np_type",
+                            "value": "MSN"
                         },
                         {
                             "code": "tax_number",
@@ -205,7 +151,7 @@
                         },
                         {
                             "code": "provider_tax_number",
-                            "value": "67ABCDE1234A1Z1"
+                            "value": "EUDRG2348R"
                         }
                     ]
                 }

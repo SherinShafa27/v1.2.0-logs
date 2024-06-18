@@ -9,28 +9,28 @@
     "core_version": "1.2.0",
     "country": "IND",
     "domain": "ONDC:RET11",
-    "message_id": "c0a3c64d-5806-4180-9e1a-927dd2a2a552",
-    "timestamp": "2024-05-08T10:09:39.380Z",
-    "transaction_id": "4e5be9a9-b697-46bb-ab11-805ba79b537a",
+    "message_id": "8a1953fa-bc52-4c7c-bc2e-7d2fdf838e57",
+    "timestamp": "2024-05-31T10:16:31.664Z",
+    "transaction_id": "1789ff08-20ec-4aaa-a6e2-62769199fb44",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "billing": {
         "address": {
-          "area_code": "560027",
+          "area_code": "560032",
           "building": "234",
           "city": "Bengaluru",
           "country": "IND",
-          "locality": "2nd Cross Road",
+          "locality": "3rd Cross Road",
           "name": "shabir",
           "state": "Karnataka"
         },
-        "created_at": "2024-05-08T10:09:39.176Z",
+        "created_at": "2024-05-31T10:16:31.507Z",
         "email": "shabir@digiledge.in",
         "name": "shabir",
         "phone": "9791223128",
-        "updated_at": "2024-05-08T10:09:39.176Z"
+        "updated_at": "2024-05-31T10:16:31.507Z"
       },
       "fulfillments": [
         {
@@ -41,29 +41,69 @@
             },
             "location": {
               "address": {
-                "area_code": "560027",
+                "area_code": "560032",
                 "building": "234",
                 "city": "Bengaluru",
                 "country": "IND",
-                "locality": "2nd Cross Road",
+                "locality": "3rd Cross Road",
                 "name": "shabir",
                 "state": "Karnataka"
               },
-              "gps": "12.967653567025422,77.5923800468445"
+              "gps": "13.023290,77.586823"
             }
           },
           "id": "F1",
-          "tracking": false,
+          "tracking": true,
           "type": "Delivery"
         }
       ],
       "items": [
         {
           "fulfillment_id": "F1",
-          "id": "ff4ede29-e59f-4d2d-8e23-4ea0ac02494c",
+          "id": "89f3e709-eb39-442b-bd78-1c88371615ce",
+          "parent_item_id": "DI0",
           "quantity": {
             "count": 2
-          }
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fulfillment_id": "F1",
+          "id": "613fd9cc-b33f-4a84-b00b-05c1118b30f8",
+          "parent_item_id": "DI0",
+          "quantity": {
+            "count": 2
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "customization"
+                }
+              ]
+            },
+            {
+              "code": "parent",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "CG3798798970"
+                }
+              ]
+            }
+          ]
         }
       ],
       "payment": {
@@ -78,8 +118,7 @@
             "settlement_counterparty": "seller-app",
             "settlement_ifsc_code": "UTIB0000004",
             "settlement_phase": "sale-amount",
-            "settlement_type": "neft",
-            "upi_address": "upi@address"
+            "settlement_type": "neft"
           }
         ]
       },
@@ -94,22 +133,73 @@
       "quote": {
         "breakup": [
           {
-            "@ondc/org/item_id": "ff4ede29-e59f-4d2d-8e23-4ea0ac02494c",
+            "@ondc/org/item_id": "89f3e709-eb39-442b-bd78-1c88371615ce",
             "@ondc/org/item_quantity": {
               "count": 2
             },
             "@ondc/org/title_type": "item",
             "item": {
+              "parent_item_id": "DI0",
               "price": {
                 "currency": "INR",
-                "value": "79"
-              }
+                "value": "150"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
             },
             "price": {
               "currency": "INR",
-              "value": "158.00"
+              "value": "300.00"
             },
-            "title": "Berry Blast Smoothie"
+            "title": "Paneer Supreme Pizza"
+          },
+          {
+            "@ondc/org/item_id": "613fd9cc-b33f-4a84-b00b-05c1118b30f8",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "parent_item_id": "DI0",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "customization"
+                    }
+                  ]
+                },
+                {
+                  "code": "parent",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "CG3798798970"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "title": "Grilled Mushrooms"
           },
           {
             "@ondc/org/item_id": "F1",
@@ -132,7 +222,7 @@
         ],
         "price": {
           "currency": "INR",
-          "value": "218.00"
+          "value": "360.00"
         },
         "ttl": "P1D"
       },
@@ -147,6 +237,10 @@
             {
               "code": "tax_number",
               "value": "29AAECI3602B1Z2"
+            },
+            {
+              "code": "np_type",
+              "value": "MSN"
             }
           ]
         }

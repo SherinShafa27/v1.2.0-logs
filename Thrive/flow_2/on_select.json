@@ -9,11 +9,10 @@
         "bap_id": "buyer-app-preprod-v2.ondc.org",
         "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc-preprod.hashtagloyalty.net/ondc/ondc-demo/",
-        "transaction_id": "f67914f2-be5e-4150-b4b4-68d65b2b9679",
-        "message_id": "4cc70f36-1424-403c-b8b6-f6234bd46fdb",
-        "timestamp": "2024-05-08T06:31:42.554Z",
-        "bpp_id": "ondc-preprod.hashtagloyalty.net",
-        "ttl": "PT30S"
+        "transaction_id": "d2f90028-df6c-4612-b43f-e9346e9e8b2d",
+        "message_id": "940ee123-c89e-4823-a568-aed7eeba6484",
+        "timestamp": "2024-05-14T18:45:03.616Z",
+        "bpp_id": "ondc-preprod.hashtagloyalty.net"
     },
     "message":
     {
@@ -104,10 +103,6 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "3478644",
-                    "fulfillment_id": "1"
                 }
             ],
             "fulfillments":
@@ -118,11 +113,23 @@
                     "tracking": true,
                     "@ondc/org/category": "Immediate Delivery",
                     "@ondc/org/TAT": "PT60M",
+                    "type": "Delivery",
                     "state":
                     {
                         "descriptor":
                         {
                             "code": "Serviceable"
+                        }
+                    },
+                    "end":
+                    {
+                        "location":
+                        {
+                            "gps": "19.059481327123834,72.82905457075687",
+                            "address":
+                            {
+                                "area_code": "400050"
+                            }
                         }
                     }
                 }
@@ -132,7 +139,7 @@
                 "price":
                 {
                     "currency": "INR",
-                    "value": "391.44"
+                    "value": "554.4"
                 },
                 "breakup":
                 [
@@ -140,14 +147,14 @@
                         "@ondc/org/item_id": "3478546",
                         "@ondc/org/item_quantity":
                         {
-                            "count": 1
+                            "count": 2
                         },
                         "title": "Flat White",
                         "@ondc/org/title_type": "item",
                         "price":
                         {
                             "currency": "INR",
-                            "value": "169.0"
+                            "value": "338.0"
                         },
                         "item":
                         {
@@ -187,14 +194,14 @@
                         "@ondc/org/item_id": "546_3492887",
                         "@ondc/org/item_quantity":
                         {
-                            "count": 1
+                            "count": 2
                         },
                         "title": "Flavored Syrups",
                         "@ondc/org/title_type": "item",
                         "price":
                         {
                             "currency": "INR",
-                            "value": "90.0"
+                            "value": "180.0"
                         },
                         "item":
                         {
@@ -244,7 +251,7 @@
                         "@ondc/org/item_id": "546_3492889",
                         "@ondc/org/item_quantity":
                         {
-                            "count": 1
+                            "count": 2
                         },
                         "title": "Whipped Cream",
                         "@ondc/org/title_type": "item",
@@ -304,7 +311,7 @@
                         "price":
                         {
                             "currency": "INR",
-                            "value": "12.95"
+                            "value": "25.9"
                         },
                         "item":
                         {
@@ -322,49 +329,6 @@
                                     ]
                                 }
                             ]
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "3478644",
-                        "@ondc/org/item_quantity":
-                        {
-                            "count": 1
-                        },
-                        "title": "Mc Saver Chicken Nuggets (4 Pc)",
-                        "@ondc/org/title_type": "item",
-                        "price":
-                        {
-                            "currency": "INR",
-                            "value": "103.8"
-                        },
-                        "item":
-                        {
-                            "quantity":
-                            {
-                                "available":
-                                {
-                                    "count": "99"
-                                },
-                                "maximum":
-                                {
-                                    "count": "99"
-                                }
-                            },
-                            "price":
-                            {
-                                "currency": "INR",
-                                "value": "103.8"
-                            }
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "3478644",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price":
-                        {
-                            "currency": "INR",
-                            "value": "5.19"
                         }
                     },
                     {

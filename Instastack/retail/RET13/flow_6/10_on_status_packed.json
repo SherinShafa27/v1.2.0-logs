@@ -6,9 +6,9 @@
     "core_version": "1.2.0",
     "bap_id": "buyer-app-preprod-v2.ondc.org",
     "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
-    "transaction_id": "341af27e-a659-4ea9-bf4d-65cd4dea9b08",
-    "message_id": "32d3265d-756d-4dcd-bf9c-13128cbf68c3",
-    "timestamp": "2024-04-24T11:57:31.010Z",
+    "transaction_id": "5804fa34-f2b6-4fd7-88f6-bd3e16869fcd",
+    "message_id": "f26ab29f-10e3-4945-9fff-b906c5bf5edb",
+    "timestamp": "2024-06-04T09:17:06.474Z",
     "ttl": "PT30S",
     "bpp_id": "seller.instastack.io",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "2024-04-24-678343",
+      "id": "2024-06-04-837629",
       "state": "In-progress",
       "provider": {
         "id": "65e1a2f5649f4aa1eec4ae6f",
@@ -51,7 +51,7 @@
         {
           "id": "65e1a4c6649f4aa1eec4ae74",
           "quantity": {
-            "count": 2
+            "count": 1
           },
           "fulfillment_id": "default_fulfillment_1"
         }
@@ -69,8 +69,8 @@
         "phone": "9898989898",
         "name": "Ajinkya Shelar",
         "email": "ajinkya101@gmail.com",
-        "created_at": "2024-04-24T11:49:33.647Z",
-        "updated_at": "2024-04-24T11:49:33.647Z"
+        "created_at": "2024-06-04T09:08:10.498Z",
+        "updated_at": "2024-06-04T09:08:10.498Z"
       },
       "fulfillments": [
         {
@@ -90,19 +90,19 @@
               "descriptor": {
                 "name": "Minimalist"
               },
-              "gps": "19.129076,72.825803",
+              "gps": "26.857438,75.802041",
               "address": {
-                "street": "Kaledonia, Navpada, Vile Parle East",
-                "locality": "Andheri East",
-                "city": "Mumbai",
-                "state": "MH",
-                "area_code": "400093"
+                "street": "SL Marg, Lal Bahadur Nagar",
+                "locality": "Adinath Nagar",
+                "city": "Jaipur",
+                "state": "RJ",
+                "area_code": "302018"
               }
             },
             "time": {
               "range": {
-                "start": "2024-04-24T11:50:02.545Z",
-                "end": "2024-04-24T12:20:02.545Z"
+                "start": "2024-06-04T09:08:50.044Z",
+                "end": "2024-06-04T09:38:50.044Z"
               }
             },
             "contact": {
@@ -132,46 +132,18 @@
             },
             "time": {
               "range": {
-                "start": "2024-04-24T12:20:02.545Z",
-                "end": "2024-04-24T12:50:02.545Z"
+                "start": "2024-06-04T09:38:50.044Z",
+                "end": "2024-06-11T09:08:50.044Z"
               }
             }
-          },
-          "tags": [
-            {
-              "code": "cancel_request",
-              "list": [
-                {
-                  "code": "reason_id",
-                  "value": "002"
-                },
-                {
-                  "code": "initiated_by",
-                  "value": "seller.instastack.io"
-                }
-              ]
-            },
-            {
-              "code": "precancel_state",
-              "list": [
-                {
-                  "code": "fulfillment_state",
-                  "value": "Pending"
-                },
-                {
-                  "code": "updated_at",
-                  "value": "2024-04-24T11:50:02.546Z"
-                }
-              ]
-            }
-          ]
+          }
         },
         {
           "id": "default_cancellation_fulfillment_1",
           "type": "Cancel",
           "state": {
             "descriptor": {
-              "code": "Packed"
+              "code": "Cancelled"
             }
           },
           "tags": [
@@ -195,6 +167,32 @@
                   "value": "-778"
                 }
               ]
+            },
+            {
+              "code": "cancel_request",
+              "list": [
+                {
+                  "code": "reason_id",
+                  "value": "002"
+                },
+                {
+                  "code": "initiated_by",
+                  "value": "seller.instastack.io"
+                }
+              ]
+            },
+            {
+              "code": "precancel_state",
+              "list": [
+                {
+                  "code": "fulfillment_state",
+                  "value": "Pending"
+                },
+                {
+                  "code": "updated_at",
+                  "value": "2024-06-04T09:08:50.044Z"
+                }
+              ]
             }
           ]
         }
@@ -202,7 +200,7 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "2076.00"
+          "value": "1537.00"
         },
         "breakup": [
           {
@@ -244,13 +242,13 @@
           {
             "@ondc/org/item_id": "65e1a4c6649f4aa1eec4ae74",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 1
             },
             "title": "Alpha Arbutin 02%",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "1078"
+              "value": "539"
             },
             "item": {
               "price": {
@@ -275,9 +273,9 @@
         "uri": "https://razorpay.com/",
         "tl_method": "http/get",
         "params": {
-          "amount": "2854.00",
+          "amount": "2315.00",
           "currency": "INR",
-          "transaction_id": "order_O2RtG7mxr5DfEU"
+          "transaction_id": "order_OId2kCs8DKy7uT"
         },
         "status": "PAID",
         "type": "ON-ORDER",
@@ -298,14 +296,14 @@
           {
             "settlement_counterparty": "buyer",
             "settlement_phase": "refund",
-            "settlement_type": "netbanking",
+            "settlement_type": "neft",
             "settlement_amount": "778",
-            "settlement_timestamp": "2024-04-24T11:54:24.924Z"
+            "settlement_timestamp": "2024-06-04T09:12:35.493Z"
           }
         ]
       },
-      "created_at": "2024-04-24T11:50:02.387Z",
-      "updated_at": "2024-04-24T11:57:30.902Z"
+      "created_at": "2024-06-04T09:08:49.880Z",
+      "updated_at": "2024-06-04T09:17:06.345Z"
     }
   }
 }

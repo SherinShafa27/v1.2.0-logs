@@ -9,14 +9,14 @@
         "bap_id": "buyer-app-preprod-v2.ondc.org",
         "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc-preprod.hashtagloyalty.net/ondc/ondc-demo/",
-        "transaction_id": "f67914f2-be5e-4150-b4b4-68d65b2b9679",
-        "message_id": "d27b3d62-fd67-493d-b7c8-93f5a865f365",
-        "timestamp": "2024-05-08T06:40:32.508Z",
+        "transaction_id": "d2f90028-df6c-4612-b43f-e9346e9e8b2d",
+        "message_id": "210a3dcf-f0b6-4f32-bb27-6bc9fd0b451e",
+        "timestamp": "2024-05-14T18:49:07.940Z",
         "bpp_id": "ondc-preprod.hashtagloyalty.net",
         "ttl": "PT30S"
     },
     "message":
     {
-        "order_id": "2024-05-08-828882"
+        "order_id": "2024-05-14-717031"
     }
 }

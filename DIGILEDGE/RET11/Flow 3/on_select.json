@@ -9,16 +9,16 @@
     "core_version": "1.2.0",
     "country": "IND",
     "domain": "ONDC:RET11",
-    "message_id": "b34dcaec-cac4-46a6-94ef-b72a6a2ffdca",
-    "timestamp": "2024-05-08T10:09:29.059Z",
-    "transaction_id": "4e5be9a9-b697-46bb-ab11-805ba79b537a",
+    "message_id": "76fda7f3-0ecc-44b1-9dce-4d2fd639915f",
+    "timestamp": "2024-05-31T10:16:21.843Z",
+    "transaction_id": "1789ff08-20ec-4aaa-a6e2-62769199fb44",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "fulfillments": [
         {
-          "@ondc/org/TAT": "PT3H",
+          "@ondc/org/TAT": "PT5H",
           "@ondc/org/category": "Standard Delivery",
           "@ondc/org/provider_name": "The Food and Bevarage Store",
           "id": "F1",
@@ -27,26 +27,64 @@
               "code": "Serviceable"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "type": "Delivery"
         },
         {
-          "@ondc/org/TAT": "PT2H",
+          "@ondc/org/TAT": "PT4H",
           "@ondc/org/category": "Takeaway",
+          "@ondc/org/provider_name": "",
           "id": "F2",
           "state": {
             "descriptor": {
               "code": "Serviceable"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "type": "Self-Pickup"
         }
       ],
       "items": [
         {
           "fulfillment_id": "F1",
-          "id": "ff4ede29-e59f-4d2d-8e23-4ea0ac02494c"
+          "id": "89f3e709-eb39-442b-bd78-1c88371615ce",
+          "parent_item_id": "DI0",
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fulfillment_id": "F1",
+          "id": "613fd9cc-b33f-4a84-b00b-05c1118b30f8",
+          "parent_item_id": "DI0",
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "customization"
+                }
+              ]
+            },
+            {
+              "code": "parent",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "CG3798798970"
+                }
+              ]
+            }
+          ]
         }
       ],
       "provider": {
@@ -60,30 +98,89 @@
       "quote": {
         "breakup": [
           {
-            "@ondc/org/item_id": "ff4ede29-e59f-4d2d-8e23-4ea0ac02494c",
+            "@ondc/org/item_id": "89f3e709-eb39-442b-bd78-1c88371615ce",
             "@ondc/org/item_quantity": {
               "count": 2
             },
             "@ondc/org/title_type": "item",
             "item": {
+              "parent_item_id": "DI0",
               "price": {
                 "currency": "INR",
-                "value": "79"
+                "value": "150"
               },
               "quantity": {
                 "available": {
                   "count": "99"
                 },
                 "maximum": {
-                  "count": "8"
+                  "count": "4"
                 }
-              }
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
             },
             "price": {
               "currency": "INR",
-              "value": "158.00"
+              "value": "300.00"
             },
-            "title": "Berry Blast Smoothie"
+            "title": "Paneer Supreme Pizza"
+          },
+          {
+            "@ondc/org/item_id": "613fd9cc-b33f-4a84-b00b-05c1118b30f8",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "parent_item_id": "DI0",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "6"
+                }
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "customization"
+                    }
+                  ]
+                },
+                {
+                  "code": "parent",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "CG3798798970"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "title": "Grilled Mushrooms"
           },
           {
             "@ondc/org/item_id": "F1",
@@ -124,7 +221,7 @@
         ],
         "price": {
           "currency": "INR",
-          "value": "238.00"
+          "value": "380.00"
         },
         "ttl": "P1D"
       }

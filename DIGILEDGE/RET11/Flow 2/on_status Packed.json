@@ -9,33 +9,33 @@
     "core_version": "1.2.0",
     "country": "IND",
     "domain": "ONDC:RET11",
-    "message_id": "1748045b-8885-4f1d-a5ea-74a52ff94eb3",
-    "timestamp": "2024-05-08T06:34:49.368Z",
-    "transaction_id": "3fbd7708-d1e6-45d7-85fe-42dadf8df070",
+    "message_id": "1c13272e-8c94-41ea-b04f-055e1c655abf",
+    "timestamp": "2024-05-31T09:34:14.275Z",
+    "transaction_id": "6354e978-d1fa-4b19-a144-16ef8e79c2b7",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "billing": {
         "address": {
-          "area_code": "560027",
+          "area_code": "560032",
           "building": "234",
           "city": "Bengaluru",
           "country": "IND",
-          "locality": "2nd Cross Road",
+          "locality": "3rd Cross Road",
           "name": "shabir",
           "state": "Karnataka"
         },
-        "created_at": "2024-05-08T06:30:45.037Z",
+        "created_at": "2024-05-31T09:24:26.657Z",
         "email": "shabir@digiledge.in",
         "name": "shabir",
         "phone": "9791223128",
-        "updated_at": "2024-05-08T06:30:45.037Z"
+        "updated_at": "2024-05-31T09:24:26.657Z"
       },
-      "created_at": "2024-05-08T06:31:03.330Z",
+      "created_at": "2024-05-31T09:24:43.379Z",
       "fulfillments": [
         {
-          "@ondc/org/TAT": "PT3H",
+          "@ondc/org/TAT": "PT2H",
           "@ondc/org/provider_name": "The Food and Bevarage Store",
           "end": {
             "contact": {
@@ -44,23 +44,23 @@
             },
             "location": {
               "address": {
-                "area_code": "560027",
+                "area_code": "560032",
                 "building": "234",
                 "city": "Bengaluru",
                 "country": "IND",
-                "locality": "2nd Cross Road",
+                "locality": "3rd Cross Road",
                 "name": "shabir",
                 "state": "Karnataka"
               },
-              "gps": "12.967653567025422,77.5923800468445"
+              "gps": "13.023290,77.586823"
             },
             "person": {
               "name": "shabir"
             },
             "time": {
               "range": {
-                "end": "2024-05-08T09:34:30.284Z",
-                "start": "2024-05-08T08:34:30.284Z"
+                "end": "2024-05-31T12:31:00.701Z",
+                "start": "2024-05-31T11:31:00.701Z"
               }
             }
           },
@@ -73,13 +73,9 @@
             "location": {
               "address": {
                 "area_code": "560043",
-                "building": "CastlePG",
                 "city": "BENGALURU URBAN",
-                "country": "IND",
-                "locality": "Amrita Uni",
-                "name": "The Food and Bevarage Store",
-                "state": "KARNATAKA",
-                "street": "Amrita Uni"
+                "locality": "Amrita Nagar",
+                "state": "KARNATAKA"
               },
               "descriptor": {
                 "name": "The Food and Bevarage Store"
@@ -87,13 +83,10 @@
               "gps": "13.022028,77.634833",
               "id": "8186c0fc-2d41-4866-ad23-8c6343ba41e8"
             },
-            "person": {
-              "name": "The Food and Bevarage Store"
-            },
             "time": {
               "range": {
-                "end": "2024-05-08T08:34:30.284Z",
-                "start": "2024-05-08T06:34:30.284Z"
+                "end": "2024-05-31T11:31:00.701Z",
+                "start": "2024-05-31T09:31:00.701Z"
               }
             }
           },
@@ -113,25 +106,105 @@
               ]
             }
           ],
-          "tracking": false,
+          "tracking": true,
           "type": "Delivery"
         }
       ],
-      "id": "2024-05-08-857468",
+      "id": "2024-05-31-988385",
       "items": [
         {
           "fulfillment_id": "F1",
-          "id": "eb8d6b12-b9e8-4cd7-8b2e-e1b840231a87",
+          "id": "e0328d72-19a0-4426-bab6-21b6713bb763",
+          "parent_item_id": "DI0",
           "quantity": {
             "count": 2
-          }
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "item"
+                }
+              ]
+            }
+          ]
         },
         {
           "fulfillment_id": "F1",
-          "id": "ff4ede29-e59f-4d2d-8e23-4ea0ac02494c",
+          "id": "79ecf474-7d62-4964-ab8b-fcab496f32a2",
+          "parent_item_id": "DI0",
+          "quantity": {
+            "count": 1
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "customization"
+                }
+              ]
+            },
+            {
+              "code": "parent",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "CG3798798970"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fulfillment_id": "F1",
+          "id": "89f3e709-eb39-442b-bd78-1c88371615ce",
+          "parent_item_id": "DI1",
           "quantity": {
             "count": 2
-          }
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fulfillment_id": "F1",
+          "id": "613fd9cc-b33f-4a84-b00b-05c1118b30f8",
+          "parent_item_id": "DI1",
+          "quantity": {
+            "count": 2
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "customization"
+                }
+              ]
+            },
+            {
+              "code": "parent",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "CG3798798970"
+                }
+              ]
+            }
+          ]
         }
       ],
       "payment": {
@@ -146,15 +219,14 @@
             "settlement_counterparty": "seller-app",
             "settlement_ifsc_code": "UTIB0000004",
             "settlement_phase": "sale-amount",
-            "settlement_type": "neft",
-            "upi_address": "upi@address"
+            "settlement_type": "neft"
           }
         ],
         "collected_by": "BAP",
         "params": {
-          "amount": "478.00",
+          "amount": "720.00",
           "currency": "INR",
-          "transaction_id": "order_O7tw5gBfgT4fqB"
+          "transaction_id": "order_OH3BKRwMcxXwe8"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -172,40 +244,142 @@
       "quote": {
         "breakup": [
           {
-            "@ondc/org/item_id": "eb8d6b12-b9e8-4cd7-8b2e-e1b840231a87",
+            "@ondc/org/item_id": "e0328d72-19a0-4426-bab6-21b6713bb763",
             "@ondc/org/item_quantity": {
               "count": 2
             },
             "@ondc/org/title_type": "item",
             "item": {
+              "parent_item_id": "DI0",
               "price": {
                 "currency": "INR",
-                "value": "100"
-              }
+                "value": "150"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
             },
             "price": {
               "currency": "INR",
-              "value": "200.00"
+              "value": "300.00"
             },
-            "title": "Veggie Delight Burger"
+            "title": "Veggie Supreme Pizza"
           },
           {
-            "@ondc/org/item_id": "ff4ede29-e59f-4d2d-8e23-4ea0ac02494c",
+            "@ondc/org/item_id": "79ecf474-7d62-4964-ab8b-fcab496f32a2",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "parent_item_id": "DI0",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "customization"
+                    }
+                  ]
+                },
+                {
+                  "code": "parent",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "CG3798798970"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "title": "Regular"
+          },
+          {
+            "@ondc/org/item_id": "89f3e709-eb39-442b-bd78-1c88371615ce",
             "@ondc/org/item_quantity": {
               "count": 2
             },
             "@ondc/org/title_type": "item",
             "item": {
+              "parent_item_id": "DI1",
               "price": {
                 "currency": "INR",
-                "value": "79"
-              }
+                "value": "150"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
             },
             "price": {
               "currency": "INR",
-              "value": "158.00"
+              "value": "300.00"
             },
-            "title": "Berry Blast Smoothie"
+            "title": "Paneer Supreme Pizza"
+          },
+          {
+            "@ondc/org/item_id": "613fd9cc-b33f-4a84-b00b-05c1118b30f8",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "parent_item_id": "DI1",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "customization"
+                    }
+                  ]
+                },
+                {
+                  "code": "parent",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "CG3798798970"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "title": "Grilled Mushrooms"
           },
           {
             "@ondc/org/item_id": "F1",
@@ -228,12 +402,12 @@
         ],
         "price": {
           "currency": "INR",
-          "value": "478.00"
+          "value": "720.00"
         },
         "ttl": "P1D"
       },
       "state": "In-progress",
-      "updated_at": "2024-05-08T06:34:49.368Z"
+      "updated_at": "2024-05-31T09:34:14.275Z"
     }
   }
 }
